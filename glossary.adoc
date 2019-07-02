@@ -11,17 +11,17 @@ Age Protection::
   Allows libraries to prevent holds on new books (on a item by item basis) from outside the owning library's branch or system for a designated amount of time.
 Apache::
   Open-source web server software used to serve both static content and dynamic web pages in a secure and reliable way. More information is available at http://apache.org.
-authority record::
+Authority Record::
   Records used to control the contents of MARC fields.
 [[B]]Balance stop percent ::
   A setting in acquisitions that prevents you from making purchases when only a specified amount of the fund remains. 
-barcode::
-  The code attached to the item.  This is not the Circulation ID.
-bibliographic record::
+Barcode::
+  The code/number attached to the item.  This is not the Circulation ID.
+Bibliographic record::
   The record that contains data about a work, such as title, author and copyright date.
 Booking::
   Processes relating to reserving cataloged and non- bibliographic items.
-buckets::
+Buckets::
   This is a container of items. See also Record Buckets and Item Buckets.
 [[C]]Call number::
   An item's call number is a string of letters and or numbers that work like map coordinates to describe where in a library a particular item "lives."
@@ -45,7 +45,9 @@ Circulation modifiers::
   Circulation modifiers pull together Loan Duration, Renewal Limit, Fine Level, Max Fine, and Profile Permission Group to create circulation rules for different types of materials. Circulation Modifiers are also used to determine Hold Policies.
 copy:: 
   see Item
-[[D]]Distribution formulas:: 
+[[D]]Default Search Library::
+  The default search library setting determines what library is searched from the advanced search screen and portal page by default. Manual selection of a search library will override it. One recommendation is to set the search library to the highest point you would normally want to search.
+Distribution formulas:: 
   Used to specify the number of copies that should be distributed to specific branches and item locations.
 Due date::
   The due date is the day on or before which an item must be returned to the library in order to avoid being charged an overdue fine. 
@@ -61,7 +63,9 @@ Funds::
   Allocations of money used for purchases.
 FRBR (Functional Requirements for Bibliographic Records)::
   See https://www.loc.gov/cds/downloads/FRBR.PDF[Library of Congress FRBR documentation]
-[[H]]Hold::
+[[H]]Hatch::
+  A additional program that is installed as an extension of your browser to extend printing functionality with Evergreen.
+Hold::
   The exclusive right for a patron to checkout a specific item. 
 Hold boundaries::
   Define which organizational units are available to fill specific holds.
@@ -70,19 +74,25 @@ Holdings import profile::
 Holding subfield::
   Used in the acquisitions module to map subfields to the appropriate item data. 
 [[I]]ILS:: 
-  Integrated Library System
+  Integrated Library System. The Integrated Library System is a set of applications which perform the business and technical aspects of library management, including but not exclusive to acquistions, cataloging, circulation, and booking. 
 ILL:: 
   Inter-Library Loan
 Import item attributes::
   Used to map the data in your holdings tag to fields in the item record during a MARC import.
 Insufficient quality fall-through profile::
   A back-up merge profile to be used for importing if an incoming record does not meet the standards of the minimum quality ratio.
-item:: 
+ISBN::
+  International Standard Book Number. The ISBN is a publisher product number that has been used in the book supply industry since 1968. A published book that is a separate product gets its own ISBN. ISBNs are either 10 digits or 13 digits long. They may contain information on the country of publication, the publisher, title, volume or edition of a title. 
+ISSN::
+  International Standard Serial Number is a unigue 8 digit number assigned by the Internation Serials Data System to identify a specfic Serial Title. 
+Item:: 
   The actual item.
 Item barcode::
   Item barcodes uniquely identify each specific item entered into the Catalog.
 Item Buckets::
   This is a container of individual items.
+Item Status::
+  Item Status allows you to see the status of a item without having to go to the actual Title Record.  Item status is a intragal part of Evergreen and how it works.
 [[J]]Jabber:: 
   The communications protocol used for client-server message passing within Evergreen. Now known as XMPP (eXtensible Messaging and Presence Protocol), it was originally named "Jabber."
 Juvenile flag::
@@ -133,6 +143,12 @@ Pickup library::
   Library designated as the location where requested material is to be picked up. 
 PostgreSQL::
   A popular open-source object-relational database management system that underpins Evergreen software.
+Preferred Library::
+  The library that is used to show items and URIs regardless of the library searched.  It is recommended to set this to your Workstation library so that local copies always show up first in search Results.
+Print Templates::
+  Templates that Evergreen uses to print various receipts and tables.
+Printer Settings::
+  Settings in Evergreen for selected printers.  This is a HATCH functionality.
 Propagate funds::
   Create a new fund for the following fiscal year with the same parameters as your current fund.
 Providers::
@@ -165,7 +181,9 @@ Statistical categories::
   A template processing system written in Perl.
 TPAC:: 
   Evergreen's Template Toolkit based OPAC. The web based public interface in Evergreen written using functionality from the Template Toolkit.
-[[U]]User Activity Type::
+[[U]]URI::
+  Universal Resource Identifier. 
+User Activity Type::
   Different types of activities users do in Evergreen. Examples: Login, Verification of account
 [[V]]Vandelay::
   MARC Batch Import/Export tool original name.
