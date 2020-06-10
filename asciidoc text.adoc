@@ -1,0 +1,110 @@
+= Test AsciiDoc File =
+:toc:
+(((AsciiDoc)))
+((("AsciiDoc style", See="Style Guide")))
+
+This is a simple AsciiDoc document. <<Moreinfo, Here are some links to more information.>> image:https://cdn2.iconfinder.com/data/icons/autumn-4/100/Hedgehog-128.png["small icon",width=50]
+
+== Basic Text Formatting ==
+
+*This is bold text.* +
+_This text is italics._ +
+*_This is bold and italic text._* +
+*[blue]#Colored text#* +
+Passthru text _+++*bold*+++_ +
+
+=== Line and Paragraph Breaks ===
+Line Break add a space and + at the end of the line. +
+For a Paragraph break add an extra line.
+
+*Lets take this block of text and format it with Line and Paragraph breaks:* +
+This is some text.
+This text more text.
+This is additional text.
+
+_Example of a Line Break:_ +
+This is some text. +
+This text more text. +
+This is additional text. +
+
+_Example of a Paragraph Break:_ 
+
+This is some text. 
+
+This text more text. 
+
+This is additional text. 
+  
+  
+
+=== Action Sequencing ===
+
+This is an action sequence: +
+*Administration -> Workstation -> Print Templates* +
+*Circulation -> Register Patron*
+
+=== Images ===
+Include Alt text in [   ] 
+
+To add a linkage to and image, include the following with in the [   ]:
+link="URL"
+
+image::/media/h456789.jpg["Cute creature", link="https://en.wikipedia.org/wiki/Hedgehog", window="_blank"]
+
+=== Lists ===
+
+
+////
+This is a bulleted list
+////
+
+.*Bulleted List*
+* bullet
+* bullet
+  - bullet
+  - bullet
+* bullet
+** bullet
+** bullet
+
+////
+This is a Ordered list
+////
+
+.*Ordered List*
+. number
++
+Some more text.
++
+. number
+  .. letter
++
+Let's order a list.
++
+  .. letter
+. number
+.. loweralpha
+.. loweralpha
+... lowerroman
+
+=== Glossary ===
+Term 1::
+  Definition 1
+Term 2:: 
+  Definition 2 +
+  Definition 2.1
+Term 3::
+  Definition 3
+
+[[Moreinfo]]
+
+== Where to find more information ==
+
+http://powerman.name/doc/asciidoc["Powerman CheatSheet", window="_blank"]
+
+http://www.methods.co.nz/asciidoc/userguide.html[AsciiDoc Userguide]
+
+
+
+
+
